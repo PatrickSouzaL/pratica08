@@ -60,6 +60,70 @@ Uso de parâmetros de rota (:id)
 
 Organização de arquivos e componentes
 
-
+--------------------------------
 mobile:
+Tecnologias utilizadas
+
+React Native
+
+Expo
+
+React Navigation
+
+Estrutura do projeto
+mobile/
+├── App.js                     # Ponto de entrada da aplicação
+├── babel.config.js
+├── package.json
+├── app.json
+└── src/
+    ├── data/
+    │   └── products.js        # Lista de produtos simulada
+    ├── navigation/
+    │   └── index.js           # Configuração da navegação (stack)
+    └── screens/
+        ├── Home.js            # Tela inicial - lista de produtos
+        └── Details.js         # Tela de detalhes do produto
+
+Telas implementadas
+Tela	Descrição
+Home	Exibe uma lista de produtos. Cada item leva à tela de detalhes.
+Details	Mostra as informações completas do produto selecionado.
+Como executar o projeto
+
+Acesse a pasta do aplicativo:
+
+cd mobile
+
+
+Instale as dependências:
+
+npm install
+
+
+Inicie o projeto:
+
+npx expo start
+
+
+Abra o aplicativo:
+
+No celular, usando o app Expo Go (escaneie o QR Code mostrado no terminal).
+
+Ou no emulador Android/iOS com as teclas:
+
+a para Android
+
+i para iOS
+
+Conceitos praticados
+
+Estruturação de projeto mobile com Expo
+
+Navegação de pilha (Stack Navigation)
+
+Passagem de parâmetros entre telas (route.params)
+
+Organização de arquivos e componentes
+
 
